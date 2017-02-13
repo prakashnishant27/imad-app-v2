@@ -1,15 +1,8 @@
-console.log('Loaded!');
-
-var element=document.getElementById('main-text');
-
-element.innerHTML='Hare Krishna';
-var img=document.getElementById('hari');
-var marginLeft=0;
-function moveRight(){
-    marginLeft+=1;
-    img.style.marginLeft=marginLeft+'px';
-
-}
-img.onclick=function(){
-    setInterval(moveRight,50);
+//counter code
+var button =document.getElementById('counter');
+var counter=0;
+button.onclick=function(){
+    counter++;
+    var span=document.getElementById('count');
+    span.innerHTML=counter.toString();
 };
