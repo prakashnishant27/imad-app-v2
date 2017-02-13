@@ -82,7 +82,10 @@ var htmltemplate=`<!Doctype html>
 return htmltemplate;
 }
 
-
+app.get('/counter',function(req,res){
+    counter++;
+    res.send(counter.toString());
+});
 
 app.get('/:articlename',function(req,res)
 {
