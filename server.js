@@ -81,7 +81,7 @@ var htmltemplate=`<!Doctype html>
 `;
 return htmltemplate;
 }
-
+var counter=0;
 app.get('/counter',function(req,res){
     counter++;
     res.send(counter.toString());
